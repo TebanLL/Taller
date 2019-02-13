@@ -15,21 +15,23 @@ header{
 #content{
     width: 100vw;
     min-height: calc(100vh - 42px);
-    height: 100%;
-    padding: 15px 10vw 0 10vw;
+    height: 100vw;
+    padding: 20px 10vw 0 20vw;
     display: flex;
     justify-content: space-between;
     background: #E9EBEE;
+    
 }
 #leftBar{
     flex: 0.9;
+    position: sticky;
 }
 #timeline{
     flex: 2.5;
 }
 #rightBar{
     flex: 1.5;
-    border: 1px solid gray;
+    
 }
 #leftBar,
 #rightBar,
@@ -78,29 +80,40 @@ header{
     display: flex;
 }
 .navBar{
-    flex: 0.8;
+    flex: 0.5;
     padding: 5px; 
     cursor: text;
     background-color: white;
+    color: rgba(150, 150, 150, 0.6)
     
     
 }
 .nameButton, .searchButton, .homeButton{
-    flex: 0.1;
+    flex: 0.05;
     padding: 5px; 
-    font-size: 13px;
+    font-size: 14px;
     cursor: pointer;
     transition: all 0.2s ease;
+    color: white;
+
 }
 
 .nameButton:hover, .searchButton:hover, .homeButton:hover{
-    box-shadow: 0px 0px 1px 1px rgba(214, 214, 215, 0.6);
-    background: rgba(243, 245, 247, 0.6);;
-    border-radius: 2px;
+    box-shadow: 0px 0px 1px 1px rgba(214, 214, 215, 0);
+    background: rgba(61, 61, 61, 0.411);;
+    border-radius: 4px;
 }
 
 .faceIcon{
-    flex: 0.3;
+    flex: 0.020;
+    width: 20px;
     background: white;
     color: #4060B8;
+    margin: 0px 5px 0px 0px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.tag{
+    padding: 0px 0px 5px 0px;
 }
